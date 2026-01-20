@@ -24,7 +24,7 @@ public partial class NavigationService: ObservableObject
         if (tag.Equals(INICIO_VIEW))
         {
             HomeView homeView = new HomeView();
-            homeView.DataContext = new HomeViewModel(this);
+            homeView.DataContext = new HomeViewModel();
             CurrentView = homeView;
         }
     }
